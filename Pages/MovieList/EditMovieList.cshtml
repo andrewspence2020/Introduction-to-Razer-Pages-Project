@@ -1,0 +1,63 @@
+﻿@page
+@model BookListRazar.EditMovieListModel
+<br />
+<h2 class="text-info">Edit Book</h2>
+<br />
+<div class="border container" style="padding:30px;">
+    <div class="text-info" style="padding:30px">
+        <form method="post">
+            <input type="hidden" asp-for="Movie.Id" />
+            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+            <div class="form-group row">
+                <div class="col-3">
+                    <label asp-for="Movie.MovieName"></label>
+
+                </div>
+                <div class="col-6">
+                    <input asp-for="Movie.MovieName" class="form-control" />
+
+                </div>
+                <span asp-validation-for="Movie.MovieName"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-3">
+                    <label asp-for="Movie.Director"></label>
+
+                </div>
+                <div class="col-6">
+                    <input asp-for="Movie.Director" class="form-control" />
+
+                </div>
+                <span asp-validation-for="Movie.Director"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-3">
+                    <label asp-for="Movie.ReleaseDate"></label>
+
+                </div>
+                <div class="col-6">
+                    <input asp-for="Movie.ReleaseDate" class="form-control" />
+
+                </div>
+                <span asp-validation-for="Movie.ReleaseDate"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-3 offset-3">
+                    <input type="submit" class="btn btn-primary form-control" value="Update" />
+
+                </div>
+                <div class="col-3">
+                    <a asp-page="Index" class="btn btn-success form-control">Back to List</a>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+</div>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial">
+}
+
