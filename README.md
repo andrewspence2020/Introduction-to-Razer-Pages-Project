@@ -1,5 +1,5 @@
 # Introduction-to-Razer-Pages-Project
-<h3>Just a project I made flexing my Razer Pages Design Muscle</h3>
+<h3>Just a CRUD project I made flexing my Razer Pages Design Muscle</h3>
 <h1>Tech Stacks Used</h1>
 <ul>
 <li>C#/HTML5/CSS3/JavaScript</li>
